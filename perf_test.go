@@ -34,11 +34,11 @@ func run64(h hash.Hash64, l int, b *testing.B) {
 
 // Byte slices
 
-func Benchmark_murmur3_64_twmb_l16(b *testing.B) {
+func Benchmark_murmur3twmb_64_l16(b *testing.B) {
 	run(murmur3twmb.New64(), 16, b)
 }
 
-func Benchmark_murmur3_64_spaolacci_l16(b *testing.B) {
+func Benchmark_murmur3spaolacci_64_l16(b *testing.B) {
 	run(murmur3spaghetti.New64(), 16, b)
 }
 
@@ -50,11 +50,11 @@ func Benchmark_fnv_64_l16(b *testing.B) {
 	run(fnv.New64(), 16, b)
 }
 
-func Benchmark_murmur3_64_twmb_l32(b *testing.B) {
+func Benchmark_murmur3twmb_64_l32(b *testing.B) {
 	run(murmur3twmb.New64(), 32, b)
 }
 
-func Benchmark_murmur3_64_spaolacci_l32(b *testing.B) {
+func Benchmark_murmur3spaolacci_64_l32(b *testing.B) {
 	run(murmur3spaghetti.New64(), 32, b)
 }
 
@@ -66,11 +66,11 @@ func Benchmark_fnv_64_l32(b *testing.B) {
 	run(fnv.New64(), 32, b)
 }
 
-func Benchmark_murmur3_64_twmb_l512(b *testing.B) {
+func Benchmark_murmur3twmb_64_l512(b *testing.B) {
 	run(murmur3twmb.New64(), 512, b)
 }
 
-func Benchmark_murmur3_64_spaolacci_l512(b *testing.B) {
+func Benchmark_murmur3spaolacci_64_l512(b *testing.B) {
 	run(murmur3spaghetti.New64(), 512, b)
 }
 
@@ -84,11 +84,11 @@ func Benchmark_fnv_64_l512(b *testing.B) {
 
 // Uint64 (much faster on 64-bit registers)
 
-func Benchmark_uint64_murmur3_64_twmb_l16(b *testing.B) {
+func Benchmark_uint64_murmur3twmb_64_l16(b *testing.B) {
 	run64(murmur3twmb.New64(), 16, b)
 }
 
-func Benchmark_uint64_murmur3_64_spaolacci_l16(b *testing.B) {
+func Benchmark_uint64_murmur3spaolacci_64_l16(b *testing.B) {
 	run64(murmur3spaghetti.New64(), 16, b)
 }
 
@@ -100,11 +100,11 @@ func Benchmark_uint64_fnv_64_l16(b *testing.B) {
 	run64(fnv.New64(), 16, b)
 }
 
-func Benchmark_uint64_murmur3_64_twmb_l32(b *testing.B) {
+func Benchmark_uint64_murmur3twmb_64_l32(b *testing.B) {
 	run64(murmur3twmb.New64(), 32, b)
 }
 
-func Benchmark_uint64_murmur3_64_spaolacci_l32(b *testing.B) {
+func Benchmark_uint64_murmur3spaolacci_64_l32(b *testing.B) {
 	run64(murmur3spaghetti.New64(), 32, b)
 }
 
@@ -116,11 +116,11 @@ func Benchmark_uint64_fnv_64_l32(b *testing.B) {
 	run64(fnv.New64(), 32, b)
 }
 
-func Benchmark_uint64_murmur3_64_twmb_l512(b *testing.B) {
+func Benchmark_uint64_murmur3twmb_64_l512(b *testing.B) {
 	run64(murmur3twmb.New64(), 512, b)
 }
 
-func Benchmark_uint64_murmur3_64_spaolacci_l512(b *testing.B) {
+func Benchmark_uint64_murmur3spaolacci_64_l512(b *testing.B) {
 	run64(murmur3spaghetti.New64(), 512, b)
 }
 
